@@ -74,7 +74,18 @@ const calculationTest = () => {
     If not, give the user the correct answer so they can learn. 'Noooo, the answer is 11'
     You choose if to use addition, subtraction, multiplication or division. 
     */
+  let number = Math.floor(Math.random() * 100);
+  let answer = Math.floor(number * 2);
+  let userAnswer = prompt(`What is ${number} * 2?`);
+
+  if (userAnswer == answer) {
+    alert("That is correct!");
+  } else {
+    alert(`The answer is ${answer}`);
+  }
 };
+
+calculationTest();
 
 /*
   6) **BONUS**
